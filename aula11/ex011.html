@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Descubra se você é <strong>brasileiro</strong></h1>
+    Seu pais: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="descobrir()">
+    <div id="des" >
+    <script>
+        function descobrir (){
+        var txtp = window.document.getElementById('txtpais')
+        var des = window.document.getElementById('des') 
+        var pai = txtp.value
+        des.innerHTML = (`<p>seu pais é <strong>${pai}<strong></p>`)
+       
+        if (pai == 'Brasil'){
+            des.innerHTML += (`<p>Você é <strong>brasileiro</strong></p>`)
+        }
+        else{
+            des.innerHTML += (`<p>Você é <strong>gringo</strong></p>`)
+        }
+    }
+    </script>
+</body>
+</html>

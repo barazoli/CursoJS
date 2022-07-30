@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(39, 91, 202, 0.877);
+    font: normal 15pt Arial;
+}
+
+header{
+ color: aliceblue;
+ text-align: center;
+}
+
+section{
+ background-color: aliceblue;
+ border-radius: 10px;
+ padding: 15px;
+ width: 500px;
+ margin: auto;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+ select#lista {
+    width:150px;
+}
+footer{
+ color: aliceblue;
+ text-align: center;
+}
